@@ -33,7 +33,6 @@ public class WebPracticeSteps extends PageSteps {
 //--------------------
 //exercise 2
 
-
     @Given("The client go to sign In page")
     public void ClickSignInButton() {
         WebPracticeHomeService.navegarWeb();
@@ -44,9 +43,7 @@ public class WebPracticeSteps extends PageSteps {
     public void setEmailAndPassword(String email,String password) {
         WebPracticeSignInService.enterEmail(email) ;
         WebPracticeSignInService.enterPassword(password);
-
     }
-
     @When("Press button login")
     public void pressButtonLogin() {
         WebPracticeSignInService.clickSignInchButton();
@@ -67,7 +64,6 @@ public class WebPracticeSteps extends PageSteps {
         WebPracticeSortService.clickOptionLowerFirst();
 
          }
-
     @Then("The client verify that results are sort properly")
     public void statsVerification3() {
 

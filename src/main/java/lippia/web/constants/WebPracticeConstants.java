@@ -1,6 +1,7 @@
 package lippia.web.constants;
 
 public class WebPracticeConstants {
+
 //excersise 1
     public static final String INPUT_SEARCH_XPATH = "xpath://*[@id=\"search_query_top\"]";
     public static final String SEARCH_BUTTON_NAME = "name:submit_search";
@@ -21,10 +22,8 @@ public class WebPracticeConstants {
 
     public static final String SELECT_PRODUCT_SORT_XPATH = "xpath://*[@id=\"uniform-selectProductSort\"]";
     public static final String OPTION_LOWER_FIRST_XPATH = "xpath://*[@id=\"selectProductSort\"]/option[2]";
-    public static final String SPAN_OLD_PRICE_XPATH = "xpath://*[@id=\"center_column\"]/ul/li[1]/div/div[1]/div/div[2]/span[2]";
-    //public static final String LIST_OF_SORT_PRODUCT_XPATH = "xpath://div[@class='product-image-container']//span[@class='price product-price']";
     public static final String LIST_OF_SORT_PRODUCT_XPATH = "xpath://*[@id='center_column']/ul/li/div/div[2]/div[1]/span[@itemprop='price']";
-    public static final String STATS3_XPATH = "xpath://a[@title='Blouse'][normalize-space()='Blouse']";
+
 
 
 }

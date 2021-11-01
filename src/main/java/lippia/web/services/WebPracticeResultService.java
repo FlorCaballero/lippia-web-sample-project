@@ -29,11 +29,9 @@ public class WebPracticeResultService extends ActionManager {
 
     //exercise 3
 
-
-
     private static boolean IsSortListByPrice() {
 
-//Se considera atributo precio (aplicada la oferta) ,en la página ordena lower first por el atributo Old_price
+      //Se considera atributo precio (aplicada la oferta) ,en la página ordena lower first por el atributo Old_price
         boolean NotOrderByLowerFirst = false;
 
         List<WebElement> allElements = getElements(WebPracticeConstants.LIST_OF_SORT_PRODUCT_XPATH );
@@ -48,12 +46,10 @@ public class WebPracticeResultService extends ActionManager {
                 NotOrderByLowerFirst = true;
                 precio_anterior=precio;
             }
-
             System.out.println(element.getText().substring(1,6));
 
             System.out.println("------------------------------------");
         }
-
          if (NotOrderByLowerFirst){
              System.out.println("-----La lista esta no esta ordenada ---");
         }
